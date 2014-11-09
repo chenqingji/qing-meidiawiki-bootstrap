@@ -9,7 +9,7 @@
 #
 # Further documentation for configuration settings may be found at:
 # https://www.mediawiki.org/wiki/Manual:Configuration_settings
-
+# jm
 # Protect against web entry
 if ( !defined( 'MEDIAWIKI' ) ) {
 	exit;
