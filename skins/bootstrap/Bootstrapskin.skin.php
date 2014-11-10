@@ -169,7 +169,6 @@ class StrappingTemplate extends BaseTemplate {
 <?php 
 //        if ( $wgGroupPermissions['*']['edit'] || $wgBootstrapSkinAnonNavbar || $this->data['loggedin'] ) { 
         if ( $this->data['loggedin'] ) { 
-}
 ?>
 <div id="userbar" class="navbar">
   <div class="navbar-inner">
