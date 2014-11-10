@@ -166,7 +166,11 @@ class StrappingTemplate extends BaseTemplate {
     // Output HTML Page
     $this->html( 'headelement' );
 ?>
-<?php if ( $wgGroupPermissions['*']['edit'] || $wgBootstrapSkinAnonNavbar || $this->data['loggedin'] ) { ?>
+<?php 
+//        if ( $wgGroupPermissions['*']['edit'] || $wgBootstrapSkinAnonNavbar || $this->data['loggedin'] ) { 
+        if ( $wgGroupPermissions['*']['edit'] || $this->data['loggedin'] ) { 
+}
+?>
 <div id="userbar" class="navbar">
   <div class="navbar-inner">
       <div class="col-md-6 pull-left hidden-xs hidden-sm">
@@ -220,9 +224,10 @@ class StrappingTemplate extends BaseTemplate {
       <div class="col-md-4 pull-left">
 
       <?php
-      if ( $wgBootstrapSkinLogoLocation == 'bodycontent' ) {
-        $this->renderLogo();
-      } ?>
+//      if ( $wgBootstrapSkinLogoLocation == 'bodycontent' ) {
+//        $this->renderLogo();
+//      } 
+      ?>
 	  
 	  </div>
 
