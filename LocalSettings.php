@@ -18,8 +18,8 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
-$wgSitename = "mediawikibootstrapskin中文";
-$wgMetaNamespace = "Mediawikibootstrapskin中文";
+$wgSitename = "Mediawiki BootStrap Skin 中文";
+$wgMetaNamespace = "Mediawiki BootStrap Skin 中文";
 
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
