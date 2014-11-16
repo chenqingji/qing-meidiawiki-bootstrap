@@ -233,23 +233,24 @@ class StrappingTemplate extends BaseTemplate {
       <div class="col-md-8 pull-right">
 	  <ul class="navigation nav nav-pills pull-right searchform-disabled">
 	  
-                <li class="active"><a href="<?php echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] ) ?>"><i class="fa fa-home"></i> Main Page</a></li>
+                <li class="active"><a href="<?php echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] ) ?>"><i class="fa fa-home"></i> 首页</a></li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i> Nav<b class="caret"></b></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i> BootStrap主题 <b class="caret"></b></a>
                     <ul class="dropdown-menu text-left" role="menu">
-                        <li><a href="http://www.mediawikibootstrapskin.co.uk/index.php?title=Special:SpecialContact">Contact us</a></li>
-                        <li><a href="http://www.mediawikibootstrapskin.co.uk/forum/viewtopic.php?f=23&t=79">Download</a></li>
+                        <li><a href="#"> Demo </a></li>
+                        <li><a href="#"> 下载 </a></li>
                         <li class="divider"></li>
-                        <li><a href="http://www.mediawikibootstrapskin.co.uk/demo/">Join Open Wiki</a></li>
+                        <li><a href="#"> 支持 </a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-info-circle"></i> Help <b class="caret"></b></a>
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-info-circle"></i> 教程 <b class="caret"></b></a>
                     <ul class="dropdown-menu text-left mwbs-color-white" role="menu">
-                        <li><a href="http://www.mediawikibootstrapskin.co.uk/forum/viewforum.php?f=5">BootstrapSkin Support</a></li>
-                        <li><a href="http://www.mediawikibootstrapskin.co.uk/forum/viewforum.php?f=31">BootstrapSkin Addons</a></li>
+                        <li><a href="#"> 通用教程 </a></li>
+                        <li><a href="#"> 特殊页面 </a></li>
+                        <li><a href="#"> 扩展 </a></li>
                         <li class="divider"></li>
-                        <li><a href="http://www.mediawikibootstrapskin.co.uk/forum/viewforum.php?f=22">Extension Downloads</a></li>
+                        <li><a href="#"> 定制主题 </a></li>
                     </ul>
                 </li>
       <?php
