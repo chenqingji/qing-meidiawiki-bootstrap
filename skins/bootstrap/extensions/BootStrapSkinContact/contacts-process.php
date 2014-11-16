@@ -17,5 +17,5 @@ $message = 'Name: ' . $_POST['name'] . "\n" .
 mail($to, $subject, $message, $headers);
 
 }
-header("Location: ../../index.php?title=Thankyou_Message");
+header("Location: index.php?title=Thankyou_Message");
 ?>
