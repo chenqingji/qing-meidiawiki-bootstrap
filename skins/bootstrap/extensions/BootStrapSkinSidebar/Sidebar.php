@@ -41,11 +41,11 @@
                                         <i class="fa fa-picture-o parent-first"></i>下载
                                     </a>
                                 </li>                                                    
-                                <li>
+<!--                                <li>
                                     <a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Special:SpecialContact" class="parent">
                                         <i class="fa fa-tint parent-first"></i>支持
                                     </a>
-                                </li>
+                                </li>-->
                                 <li>
                                     <a href="http://mediawikibootstrapskin.9ong.com/index.php?title=general_tutorial" class="parent">
                                         <i class="fa fa-columns parent-first"></i>基础教程
@@ -53,12 +53,12 @@
                                 </li>
                                 <li>
                                     <a href="http://mediawikibootstrapskin.9ong.com/index.php?title=specail_page_tutorial" class="parent">
-                                        <i class="fa fa-angle-double-down parent-first"></i>特殊页面
+                                        <i class="fa fa-angle-double-down parent-first"></i>特殊页面教程
                                     </a>
                                 </li>                                                               
                                 <li>
                                     <a href="http://mediawikibootstrapskin.9ong.com/index.php?title=extension_tutorial" class="parent">
-                                        <i class="fa fa-ellipsis-h parent-first"></i>扩展
+                                        <i class="fa fa-ellipsis-h parent-first"></i>扩展教程
                                     </a>
                                 </li>
                                 <li>

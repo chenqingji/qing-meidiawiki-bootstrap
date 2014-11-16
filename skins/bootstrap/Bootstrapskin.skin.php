@@ -247,8 +247,8 @@ class StrappingTemplate extends BaseTemplate {
                     <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-info-circle"></i> 教程 <b class="caret"></b></a>
                     <ul class="dropdown-menu text-left mwbs-color-white" role="menu">
                         <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=general_tutorial"> 基础教程 </a></li>
-                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=specail_page_tutorial"> 特殊页面 </a></li>
-                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=extension_tutorial"> 扩展 </a></li>
+                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=specail_page_tutorial"> 特殊页面教程 </a></li>
+                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=extension_tutorial"> 扩展教程 </a></li>
                         <li class="divider"></li>
                         <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=custom_skin"> 定制主题 </a></li>
                     </ul>
