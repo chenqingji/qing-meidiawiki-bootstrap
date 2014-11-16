@@ -21,7 +21,7 @@ class SpecialContact extends SpecialPage {
 		$output->addWikiText( $wikitext );
 		$output->addHTML('
 
-                <script type="text/javascript" src="./extensions/BootStrapSkinContact/modules/ext.validate.js"></script>
+                <script type="text/javascript" src="./skins/bootstrap/extensions/BootStrapSkinContact/modules/ext.validate.js"></script>
                 <form action="./extensions/BootStrapSkinContact/contacts-process.php" method="post" id="contact-form" class="bootstrap">				
 				 <fieldset>					
 					 <div class="row">
