@@ -235,22 +235,22 @@ class StrappingTemplate extends BaseTemplate {
 	  
                 <li class="active"><a href="<?php echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] ) ?>"><i class="fa fa-home"></i> 首页</a></li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i> BootStrap主题 <b class="caret"></b></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i> Bootstrapskin <b class="caret"></b></a>
                     <ul class="dropdown-menu text-left" role="menu">
-                        <li><a href="#"> Demo </a></li>
-                        <li><a href="#"> 下载 </a></li>
+                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=demo"> Demo </a></li>
+                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=download"> 下载 </a></li>
                         <li class="divider"></li>
-                        <li><a href="#"> 支持 </a></li>
+                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Special:SpecialContact"> 支持 </a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-info-circle"></i> 教程 <b class="caret"></b></a>
                     <ul class="dropdown-menu text-left mwbs-color-white" role="menu">
-                        <li><a href="#"> 通用教程 </a></li>
-                        <li><a href="#"> 特殊页面 </a></li>
-                        <li><a href="#"> 扩展 </a></li>
+                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=general_tutorial"> 基础教程 </a></li>
+                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=specail_page_tutorial"> 特殊页面 </a></li>
+                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=extension_tutorial"> 扩展 </a></li>
                         <li class="divider"></li>
-                        <li><a href="#"> 定制主题 </a></li>
+                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=custom_skin"> 定制主题 </a></li>
                     </ul>
                 </li>
       <?php
@@ -727,7 +727,7 @@ class StrappingTemplate extends BaseTemplate {
           ?>
 		  
         <li class="hidden-xs hidden-sm">
-          <a id="n-Search" class="search-link"><i class="icon-search"></i>Search</a>
+          <a id="n-Search" class="search-link"><i class="icon-search"></i>搜索</a>
           <form class="navbar-search" action="<?php $this->text( 'wgScript' ) ?>" id="nav-searchform">
                         <input id="searchInput" class="search-query" type="search" accesskey="f" title="<?php $this->text('searchtitle'); ?>" placeholder="<?php $this->msg('search'); ?>" name="search" value="<?php echo htmlspecialchars ($this->data['search']); ?>">
                         <?php echo $this->makeSearchButton( 'fulltext', array( 'id' => 'mw-searchButton', 'class' => 'searchButton btn hidden' ) ); ?>
