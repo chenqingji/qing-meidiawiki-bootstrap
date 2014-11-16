@@ -17,5 +17,5 @@ file_put_contents("/tmp/bs.mail.log", $headers."\n".$message,FILE_APPEND);
 mail($to, $subject, $message, $headers);
 
 }
-header("Location: index.php?title=Thankyou_Message");
+header("Location: http://mediawikibootstrapskin.9ong.com/index.php?title=Thankyou_Message");
 ?>
