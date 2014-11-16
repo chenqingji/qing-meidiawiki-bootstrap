@@ -22,7 +22,7 @@ class SpecialContact extends SpecialPage {
 		$output->addHTML('
 
                 <script type="text/javascript" src="./skins/bootstrap/extensions/BootStrapSkinContact/modules/ext.validate.js"></script>
-                <form action="./extensions/BootStrapSkinContact/contacts-process.php" method="post" id="contact-form" class="bootstrap">				
+                <form action="./skins/bootstrap/extensions/BootStrapSkinContact/contacts-process.php" method="post" id="contact-form" class="bootstrap">				
 				 <fieldset>					
 					 <div class="row">
 						 <section class="col col-6">
