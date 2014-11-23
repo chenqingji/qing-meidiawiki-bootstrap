@@ -237,20 +237,20 @@ class StrappingTemplate extends BaseTemplate {
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i> Bootstrapskin <b class="caret"></b></a>
                     <ul class="dropdown-menu text-left" role="menu">
-                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=demo"> Demo </a></li>
-                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=download"> 下载 </a></li>
+                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Demo"> Demo </a></li>
+                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Download"> 下载 </a></li>
                         <li class="divider"></li>
-                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Special:SpecialContact"> 支持 </a></li>
+                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Special:SpecialContact"> 联系我们 </a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-info-circle"></i> 教程 <b class="caret"></b></a>
                     <ul class="dropdown-menu text-left mwbs-color-white" role="menu">
-                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=general_tutorial"> 基础教程 </a></li>
-                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=specail_page_tutorial"> 特殊页面教程 </a></li>
-                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=extension_tutorial"> 扩展教程 </a></li>
+                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Mediawiki_Preloaded_Text_Tutorial"> 基础教程 </a></li>
+                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Special_Page_Tutorial"> 特殊页面教程 </a></li>
+                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Mediawiki_Extension_Tutorial"> 扩展教程 </a></li>
                         <li class="divider"></li>
-                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=custom_skin"> 定制主题 </a></li>
+                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Custom_Skin"> 自定义主题 </a></li>
                     </ul>
                 </li>
       <?php

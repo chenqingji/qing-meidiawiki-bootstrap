@@ -37,7 +37,7 @@
                                 </li>                               
                                 
                                 <li>
-                                    <a href="http://mediawikibootstrapskin.9ong.com/index.php?title=download" class="parent">
+                                    <a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Download" class="parent">
                                         <i class="fa fa-picture-o parent-first"></i>下载
                                     </a>
                                 </li>                                                    
@@ -47,23 +47,23 @@
                                     </a>
                                 </li>-->
                                 <li>
-                                    <a href="http://mediawikibootstrapskin.9ong.com/index.php?title=general_tutorial" class="parent">
+                                    <a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Mediawiki_Preloaded_Text_Tutorial" class="parent">
                                         <i class="fa fa-columns parent-first"></i>基础教程
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="http://mediawikibootstrapskin.9ong.com/index.php?title=specail_page_tutorial" class="parent">
+                                    <a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Special_Page_Tutorial" class="parent">
                                         <i class="fa fa-angle-double-down parent-first"></i>特殊页面教程
                                     </a>
                                 </li>                                                               
                                 <li>
-                                    <a href="http://mediawikibootstrapskin.9ong.com/index.php?title=extension_tutorial" class="parent">
+                                    <a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Mediawiki_Extension_Tutorial" class="parent">
                                         <i class="fa fa-ellipsis-h parent-first"></i>扩展教程
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="http://mediawikibootstrapskin.9ong.com/index.php?title=custom_skin" class="parent">
-                                        <i class="fa fa-picture-o parent-first"></i>定制主题
+                                    <a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Custom_Skin" class="parent">
+                                        <i class="fa fa-picture-o parent-first"></i>自定义主题
                                     </a>
                                 </li>
 
