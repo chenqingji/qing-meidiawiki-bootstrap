@@ -235,7 +235,7 @@ class StrappingTemplate extends BaseTemplate {
 	  
                 <li class="active"><a href="<?php echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] ) ?>"><i class="fa fa-home"></i> 首页</a></li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i> Bootstrapskin <b class="caret"></b></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i> 主题 <b class="caret"></b></a>
                     <ul class="dropdown-menu text-left" role="menu">
                         <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Demo"> Demo </a></li>
                         <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Download"> 下载 </a></li>
