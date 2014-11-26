@@ -1,0 +1,205 @@
+__NOTOC__
+{{DISPLAYTITLE:扩展教程}}
+<div class="col-md-12" style="border:1px solid #E74C3C;border-radius:5px;padding 10px;margin-bottom:20px;">
+<h4>Mediawiki Custom Extension Tutorial</h4>
+<p class="text-justify">This tutorial is part of a series of articles about creating skins, extensions and aspects of Mediawiki that appear to be missing from the Mediawiki documentation, it is for people that want to learn, but lack the necessary knowledge to get started. As with the other articles I've also included the downloadable files, so that you can have a go at creating an extension yourself.</p>
+<h5>Extension Folders and Files</h5>
+<p>You can skip the tutorial and download the files at the bottom of the page. As part of the learning process I would suggest changing the extension names etc, you will very likely break it but this will help you to understand how it all fits together a lot quicker.</p>
+<p>Create the following folders and files in the Mediawiki extensions folder;</p>
+    <ul class="list-unstyled">
+      <li>
+        <span><i class="fa fa-folder-open"></i> extensions</span>
+        <ul class="list-unstyled">
+          <li>
+            <span><i class="fa fa-folder-open"></i> YourCustomExtension</span>
+            <ul class="list-unstyled">
+              <li>
+                <span><i class="fa fa-file-o"></i> YourCustomExtension.i18n.php</span>
+              </li>
+              <li>
+                <span><i class="fa fa-file-o"></i> YourCustomExtension.php</span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span><i class="fa fa-folder-open"></i> modules</span>
+                <ul class="list-unstyled">
+                  <li>
+                    <span><i class="fa fa-file-o"></i> ext.yourjavascript.js</span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-file-o"></i> ext.output.js</span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-file-o"></i> ext.yourstylesheet.css</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+<div style="margin-bottom:20px;"></div>
+<h5>YourCustomExtension.i18n.php</h5>
+<pre>
+<?php
+/**
+ *
+ *
+ * @file
+ * @ingroup Extensions
+ */
+
+$messages = array();
+
+$messages['en'] = array(
+        'yourcustom'   => 'Custom',
+	    'yourcustom-desc'           => 'A short phrase describing your extension',
+);
+</pre>
+<h5>YourCustomExtension.php</h5>
+<pre>
+<?php
+if ( !defined( 'MEDIAWIKI' ) ) die();
+
+$wgExtensionCredits['other'][] = array(
+	'path' => __FILE__,
+	'name' => 'YourCustomExtension',
+	'author' => array(
+		'[http://www.yoururl.com John Smith ]',
+	),
+	'descriptionmsg' => 'yourcustom-desc',
+	'url' => 'http://www.yoururl.com',
+);
+
+$wgExtensionMessagesFiles['YourCustomExtension'] = __DIR__ . '/YourCustomExtension.i18n.php';
+
+$wgResourceModules['ext.YourCustomExtension'] = array(
+	'scripts' => array('modules/ext.yourjavascript.js','modules/ext.output.js'),
+	'styles' => array('modules/ext.yourstylesheet.css'),
+ 
+	'localBasePath' => __DIR__,
+	'remoteExtPath' => 'YourCustomExtension',
+);
+
+$wgHooks['BeforePageDisplay'][] = 'addSomeExtension';
+ 
+function addSomeExtension( OutputPage &$out, Skin &$skin ) {
+   $out->addModules( ext.YourCustomExtension' );
+ 
+   return true;
+}
+</pre>
+<p>Note: I've included a file entitled ext.output.js, this is what I use to call the JavaScripts, this isn't how the Mediawiki Core team do it, but I find its better to keep all the code together rather than use Mediawiki:Common.js, which is also prone to breaking when you include JavaScript variables.</p>
+<h5>Installation</h5>
+<pre>require_once "$IP/extensions/YourCustomExtension/YourCustomExtension.php";</pre>
+<h5>Use Case - Love Bootstrap but want to use Vector?</h5>
+<p>Using the following tutorial you can create a custom bootstrap extension for Mediawiki that works with Vector.</p>
+    <ul class="list-unstyled">
+      <li>
+        <span><i class="fa fa-folder-open"></i> extensions</span>
+        <ul class="list-unstyled">
+          <li>
+            <span><i class="fa fa-folder-open"></i> Bootstrap</span>
+            <ul class="list-unstyled">
+              <li>
+                <span><i class="fa fa-file-o"></i> bootstrap.i18n.php</span>
+              </li>
+              <li>
+                <span><i class="fa fa-file-o"></i> bootstrap.php</span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span><i class="fa fa-folder-open"></i> modules</span>
+                <ul class="list-unstyled">
+                  <li>
+                    <span><i class="fa fa-file-o"></i> ext.bootstrap.css</span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-file-o"></i> ext.bootstrap.js</span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-file-o"></i> ext.bootstrap-theme.css</span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-file-o"></i> ext.output.js</span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-file-o"></i> ext.theme.css</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+<div style="margin-bottom:20px;"></div>
+<h5>bootstrap.i18n.php</h5>
+<pre>
+<?php
+/**
+ *
+ *
+ * @file
+ * @ingroup Extensions
+ */
+
+$messages = array();
+
+$messages['en'] = array(
+        'bootstrap'   => 'Bootstrap',
+	    'bootstrap-desc'           => 'Bootstrap extension for Mediawiki',
+);
+</pre>
+<h5>bootstrap.php</h5>
+<pre>
+<?php
+if ( !defined( 'MEDIAWIKI' ) ) die();
+
+$wgExtensionCredits['other'][] = array(
+	'path' => __FILE__,
+	'name' => 'Bootstrap',
+	'author' => array(
+		'[http://www.yoururl.com John Smith ]',
+	),
+	'descriptionmsg' => 'bootstrap-desc',
+	'url' => 'http://www.yoururl.com',
+);
+
+$wgExtensionMessagesFiles['Bootstrap'] = __DIR__ . '/bootstrap.i18n.php';
+
+$wgResourceModules['ext.bootstrap'] = array(
+	'scripts' => array(
+            'modules/ext.bootstrap.js',
+			'modules/ext.output.js',
+        ),
+	'styles' => array(
+            'modules/ext.bootstrap.css',
+            'modules/ext.bootstrap-theme.css',
+            'modules/ext.theme.css'
+),
+ 
+	'localBasePath' => __DIR__,
+	'remoteExtPath' => 'Bootstrap',
+);
+
+$wgHooks['BeforePageDisplay'][] = 'addBootstrap';
+ 
+function addBootstrap( OutputPage &$out, Skin &$skin ) {
+   $out->addModules( 'ext.bootstrap' );
+ 
+   return true;
+}
+</pre>
+<h5>Install</h5>
+<pre>require_once "$IP/extensions/Bootstrap/bootstrap.php";</pre>
+<h5>Application</h5>
+<p>Use the [http://getbootstrap.com/css/ Bootstrap docs] to apply the styles to your wiki.</p>
+<p><strong>Use Bootstraps docs in combination with our docs as some of the classes need to be modified to work with Mediawiki e.g. buttons.</strong></p>
+<p><div class="btn btn-default">[http://mediawikibootstrapskin.9ong.com/index.php?title=Bootstrapskin_Extensions#Bootstrap_Extension Download Bootstrap Extension.]</div></p>
+</div>
+
+[[Category: Mediawiki Tutorials]]

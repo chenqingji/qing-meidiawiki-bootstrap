@@ -1,0 +1,24 @@
+__NOTOC__
+{{DISPLAYTITLE:基础教程}}
+<div class="col-md-12" style="border:1px solid #E74C3C;border-radius:5px;padding 10px;margin-bottom:20px;">
+<h4>Mediawiki Pre-Loaded Text Tutorial</h4>
+<p class="text-justify">Following numerous requests from users and customers the following is a tutorial on how to include preloaded text into the edit form when creating new pages. This extension isn't one of our's though we have created a more convenient method of installation - at the time of writing this extension is not being supported by the developer.</p>
+<p>Screenshot below gives you an idea of the functionality.</p>
+<div class="col-md-6">
+<div class=thumbnail img-thumbnail">http://mediawikibootstrapskin.co.uk/images/preloader.jpg</div>
+</div>
+<div class="clearfix"></div>
+<h4>Installation</h4>
+<p>Unpack the extension into the Mediawiki extensions folder and add the following to LocalSettings.php;</p>
+<pre>
+require_once "$IP/extensions/Preloader/Preloader.php";
+$wgPreloaderSource[ NS_MAIN ] = 'Template:UserContribution';
+</pre>
+<p>** Replace "UserContribution" (above) with a string appropriate to your wiki.</p>
+<h4>Configuration</h4>
+<p>Visit your wiki and create the template associated with the preloaded text, e.g. /index.php?title=Template:UserContribution.</p>
+<p>Create a new page to check the functionality.</p>
+<p><div class="btn btn-default">[http://mediawikibootstrapskin.9ong.com/index.php?title=Bootstrapskin_Extensions#Preloader Download Preloader]</div></p>
+</div>
+
+[[Category:Mediawiki Tutorials]]

@@ -1,0 +1,142 @@
+__NOTOC__
+{{DISPLAYTITLE:特殊页面教程}}
+<div class="col-md-12" style="border:1px solid #E74C3C;border-radius:5px;padding 10px;margin-bottom:20px;">
+<h4>Mediawiki Special Page Tutorial</h4>
+<p class="text-justify">If you want to add more advanced features to Bootstrapskin you will need to either create an extension or a Special Page. Examples of what a Special Page can be used for are adding forms, multi-functional image galleries and embedding a community forum, the list is endless, but suffice to say that "anything" you want to include in your wiki can be included through a special page.</p>
+<p class="text-justify">Use a special page for a feature that you only intend to use once, if you want to reuse a feature, such as a gallery that displays different pictures on different pages, you should create an extension. ([[Mediawiki Extension Tutorial|see here for a turorial on creating extensions]])</p>
+<p>The following is a short guide on how to add advanced features to your wiki using a Special:Page. This is a fully working script that can be used straight away with minimal modification.</p>
+<p>IMPORTANT: If you intend to add a feature such as a form, take care to test for security issues with a relevant penetration test! Ask at the forums if you need help.</p>
+<h5>Special Folders and Files</h5>
+<p>You can skip the tutorial and view the demo and download the files at the bottom of the page.</p>
+<p>Create the following folders and files in the Mediawiki extensions folder as below;</p>
+    <ul class="list-unstyled">
+      <li>
+        <span><i class="fa fa-folder-open"></i> extensions</span>
+        <ul class="list-unstyled">
+          <li>
+            <span><i class="fa fa-folder-open"></i> BootStrapSkinCustomExtension</span>
+            <ul class="list-unstyled">
+              <li>
+                <span><i class="fa fa-file-o"></i> BootStrapSkinCustomExtension.alias.php</span>
+              </li>
+              <li>
+                <span><i class="fa fa-file-o"></i> BootStrapSkinCustomExtension.i18n.php</span>
+              </li>
+              <li>
+                <span><i class="fa fa-file-o"></i> BootStrapSkinCustomExtension.php</span>
+              </li>
+              <li>
+                <span><i class="fa fa-file-o"></i> SpecialCustom.php</span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span><i class="fa fa-folder-open"></i> modules</span>
+                <ul class="list-unstyled">
+                  <li>
+                    <span><i class="fa fa-file-o"></i> ext.yourjavascript.js</span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-file-o"></i> ext.yourstylesheet.css</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+<div style="margin-bottom:20px;"></div>
+<h5>SpecialCustom.php</h5>
+<pre>
+<?php
+
+class SpecialCustom extends SpecialPage {
+	function __construct() {
+		parent::__construct( 'SpecialCustom' );
+	}
+ 
+		function execute( $par ) {
+		$request = $this->getRequest();
+		$output = $this->getOutput();
+		$this->setHeaders();
+		$output->setPageTitle("Hello World Title");
+
+		$param = $request->getText( 'param' );
+		
+		$output = $this->getOutput();
+        $output->addModuleScripts( 'ext.BootStrapSkinCustomExtension' );
+		$output->addModuleStyles( 'ext.BootStrapSkinCustomExtension' ); 
+ 
+		$wikitext = '';
+		$output->addWikiText( $wikitext );
+		$output->addHTML('		
+            
+			<div class="col-md-12"> //Take great care to retain everything before this line
+			<p>Hello World</p> //This section is where you include your html/php/Javascript
+			</div>//Take great care to retain everything after this line
+			
+			');
+	}
+};
+</pre>
+<h5>BootStrapSkinCustomExtension.php</h5>
+<pre>
+<?php
+if ( !defined( 'MEDIAWIKI' ) ) die();
+
+$wgExtensionCredits['other'][] = array(
+	'path' => __FILE__,
+	'name' => 'BootStrapSkinCustomExtension',
+	'author' => array(
+		'[http://url.com Your Name]',
+	),
+	'descriptionmsg' => 'custom-desc',
+	'url' => 'http://url.com',
+);
+
+$wgExtensionMessagesFiles['BootStrapSkinCustomExtension'] = __DIR__ . '/BootStrapSkinCustomExtension.i18n.php';
+
+$wgResourceModules['ext.BootStrapSkinCustomExtension'] = array(
+	'scripts' => array('modules/ext.yourjavascript.js'),
+	'styles' => array('modules/ext.yourstylesheet.css'),
+ 
+	'localBasePath' => __DIR__,
+	'remoteExtPath' => 'BootStrapSKinCustomExtension',
+	
+);
+
+$wgAutoloadClasses[ 'SpecialCustom' ] = __DIR__ . '/SpecialCustom.php';
+$wgSpecialPages[ 'SpecialCustom' ] = 'SpecialCustom';
+$wgExtensionMessagesFiles[ 'SpecialCustom' ] = __DIR__ . '/BootStrapSkinCustomExtension.alias.php';
+
+</pre>
+<h5>BootStrapSkinCustomExtension.i18n.php</h5>
+<pre>
+<?php
+/**
+ *
+ *
+ * @file
+ * @ingroup Extensions
+ */
+
+$messages = array();
+
+$messages['en'] = array(
+        'custom'   => 'Custom',
+	    'custom-desc'           => 'a phrase about your extension',
+);
+</pre>
+<h5>LocalSettings.php</h5>
+<pre>
+require_once "$IP/extensions/BootStrapSkinCustomExtension/BootStrapSkinCustomExtension.php";
+</pre>
+<p>And finally the url to reach your new special page is;</p>
+<pre>
+/index.php?title=Special:SpecialCustom
+</pre>
+<p><div class="btn btn-default">[http://mediawikibootstrapskin.9ong.com/index.php?title=Bootstrapskin_Extensions#Bootstrapskin_Custom_Special Download Special Custom]</div></p>
+</div>
+
+[[Category:Mediawiki Tutorials]]

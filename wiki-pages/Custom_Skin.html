@@ -1,0 +1,86 @@
+__NOTOC__{{DISPLAYTITLE:自定义主题教程}}
+<div class="col-md-6 hidden-sm hidden-xs"><div class="thumbnail img-thumbnail" style="border:none;float:left;">http://mediawikibootstrapskin.co.uk/images/bootstrapskin-logo.png</div></div>
+<div class="col-md-12" style="border:1px solid #E74C3C;border-radius:5px;padding 10px;margin-bottom:20px;">
+<h4>Creating a Custom Skin - A beginners guide</h4>
+<p class="text-justify">This tutorial isn't about creating a "New" skin, it's about using Bootstrapskin to create a new skin</p>
+<p class="text-justify"> Bootstrapskin was never created as a stand-alone skin, it was created as a developement tool for creating unique Mediawiki skins.</p>
+<p class="text-justify">If you view the Bootstrapskin demo's ([http://mediawikibootstrapskin.co.uk/demo/index.php?title=Main_Page Default Open source], [http://mediawikibootstrapskin.co.uk/nexus/index.php?title=Main_Page Nexus] and [http://mediawikibootstrapskin.co.uk/halcyon/index.php?title=Main_Page Halcyon]), they may all look very different, but each uses Bootstrapskin and more surprisingly very little customisation is required to produce wiki's like these.</p>
+<h5>The Basics</h5>
+<p class= "text-justify"><strong>Styling</strong>: For developers that have their own Bootstrap style sheets, you can swap your style for the default Bootstrapskin style.</p>
+<p class= "text-justify"><strong>Menu's</strong>: Use a custom menu of your choice with minimal modification of Bootstrapskin.skin.php</p>
+<p class= "text-justify"><strong>Mediawiki</strong>: All Mediawiki styling mods are carried out through screen.css.</p>
+<p class= "text-justify">And that as they say is pretty much it .... It really is that simple.</p> 
+<h5>Getting Started</h5>
+<ul>
+<li>Set up a developement framework - Install [https://www.apachefriends.org/download.html Xampp] on your PC. </li>
+<li>Install a developement editor - Install [http://notepad-plus-plus.org/download/ NotePad++] on your PC.</li>
+</ul>
+<h5>Using a Custom Stylesheets</h5>
+<p class= "text-justify">Remove Bootstrapskins default stylesheet and replace with your own Bootstrap stylesheet - edit /skins/bootstrap/bootstrapskin.php;</p>
+<pre>
+        'bootstrap/bootstrap/css/bootstrap-blue.css' => array( 'media' => 'screen' ), //remove this file
+        'bootstrap/screen.css' => array( 'media' => 'screen' ),
+        'bootstrap/theme.css' => array( 'media' => 'screen' ),
+        'bootstrap/bootstrap/css/jquery-ui.min.css' => array( 'media' => 'screen' ),
+        'bootstrap/bootstrap/css/font.css' => array( 'media' => 'screen' ),
+        'bootstrap/bootstrap/css/jquery-ui.min.css' => array( 'media' => 'screen' ),
+        'bootstrap/bootstrap/css/typography.css' => array( 'media' => 'screen' ),
+        'bootstrap/bootstrap/css/misc.css' => array( 'media' => 'screen' ),
+	),
+</pre>
+<p>And include your own stylesheet.</p>
+<pre>   
+        'bootstrap/bootstrap/css/custom-stylesheet.css' => array( 'media' => 'screen' ), //Add your own
+        'bootstrap/screen.css' => array( 'media' => 'screen' ),
+        'bootstrap/theme.css' => array( 'media' => 'screen' ),
+        'bootstrap/bootstrap/css/jquery-ui.min.css' => array( 'media' => 'screen' ),
+        'bootstrap/bootstrap/css/font.css' => array( 'media' => 'screen' ),
+        'bootstrap/bootstrap/css/jquery-ui.min.css' => array( 'media' => 'screen' ),
+        'bootstrap/bootstrap/css/typography.css' => array( 'media' => 'screen' ),
+        'bootstrap/bootstrap/css/misc.css' => array( 'media' => 'screen' ),
+	),
+</pre>
+<p>Save and refresh to view the changes, you may need to fine tune the new style a little.</p>
+<h5>Using a Custom Menu</h5>
+<p class= "text-justify">Add the menu style - edit /skins/bootstrap/bootstrapskin.php;</p>
+<pre>   
+        'bootstrap/bootstrap/css/custom-stylesheet.css' => array( 'media' => 'screen' ), 
+        'bootstrap/screen.css' => array( 'media' => 'screen' ),
+        'bootstrap/theme.css' => array( 'media' => 'screen' ),
+        'bootstrap/bootstrap/css/jquery-ui.min.css' => array( 'media' => 'screen' ),
+        'bootstrap/bootstrap/css/font.css' => array( 'media' => 'screen' ),
+        'bootstrap/bootstrap/css/jquery-ui.min.css' => array( 'media' => 'screen' ),
+        'bootstrap/bootstrap/css/typography.css' => array( 'media' => 'screen' ),
+        'bootstrap/bootstrap/css/misc.css' => array( 'media' => 'screen' ),
+        'bootstrap/bootstrap/css/custom-menu.css' => array( 'media' => 'screen' ),//Add menu style sheet
+	),
+</pre>
+<p class="text-justify">I've created a skeleton skin, one in which the menu is a little easier to understand than the default skin, download below, upload and replace the current bootstrapskin.skin.php and modify as required, taking particular care to add your custom menu classes - edit from line 144. </p>
+<h5>Final Tips</h5>
+<p class="text-justify">Refer to our [[Features_Guides|documentation]] with regard to applying your new styles to wiki pages.</p> 
+<p class="text-justify">Use our extensions as they have been tested with Bootstrapskin or take care to test any JavaScript additions as they tend to break the skin!</p> 
+<p class= "text-justify" id="skindownload" style="margin-bottom:20px;">If you need help ask at the [http://forum.mediawikibootstrapskin.co.uk/?forum=391524 forums].</p>
+<htmlet nocache="yes">skintutorial</htmlet>
+</div>
+<!--<div class="thumbnail and img-thumbnail" style="cursor: pointer;border:none;" data-toggle="modal" data-target="#bssCommercial">http://mediawikibootstrapskin.co.uk/images/bootstrapskin-commercial-skin.png</div>
+<div id="bssCommercial" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="close" data-dismiss="modal" aria-hidden="true">×</div>
+            <h4 class="modal-title" id="myModalLabel">Our Commercial Skins</h4>
+          </div>
+          <div class="col-md-12">
+            <p class="text-justify" style="margin-top:10px;">We have two ultra smooth commercial skins - Nexus and Halcyon - which are available by making a donation of just £20 (approx $32/&euro;26).</p>
+          <p class="text-justify">View demo's of [http://www.mediawikibootstrapskin.co.uk/halcyon/index.php?title=Main_Page Halcyon] and [http://www.mediawikibootstrapskin.co.uk/nexus/index.php?title=Main_Page Nexus].</p>
+          </div>
+          <div class="modal-footer" style="border-top: transparent;">
+            <div class="btn btn-primary">[http://www.mediawikibootstrapskin.co.uk/index.php?title=Special:SpecialShop#!/Halcyon-Skin/p/41528627/category=10721547 Purchase Halcyon]</div>
+            <div class="btn btn-primary">[http://www.mediawikibootstrapskin.co.uk/index.php?title=Special:SpecialShop#!/Nexus-Skin/p/41220409/category=10721547 Purchase Nexus]</div>
+            <div class="btn btn-default" data-dismiss="modal">Close</div>
+          </div>
+        </div>
+      </div>
+    </div>-->
+<div class="col-md-12">
+<div class="text-center hidden-xs" style="margin-left:30%;margin-bottom:20px;"><div class="fb-like" data-href="http://mediawikibootstrapskin.9ong.com/" data-layout="standard" data-action="like" data-show-faces="false" data-share="true" data-colorscheme="light"></div></div>

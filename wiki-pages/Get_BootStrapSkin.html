@@ -1,0 +1,256 @@
+__NOTOC__{{DISPLAYTITLE:下载及安装向导<span style="display: none"></span>}}
+<div class="col-md-12 hidden-sm hidden-xs"><div class="thumbnail img-thumbnail" style="border:none;float:left;">http://mediawikibootstrapskin.co.uk/images/bootstrapskin-logo.png</div></div>
+<div class="col-md-12"> 
+<div class="panel panel-primary-light-border"> 
+<div class="panel-heading"> <h3 class="panel-title">Download BootStrapSkin 1.0.43</h3> </div> 
+<div class="panel-body">
+<p class="text-justify">This is the latest version, released August 21st 2014, it's primary purpose is to address BootStrapSkins mobile viewing problems. </p>
+<p class="text-justify">Prior to launch 1.0.43 was tested extensively by users on a variety of mobile devices including the iPhone 4/5, HTC 1/8, Nokia Lumia, Samsung Galaxy, Google Nexus, iPad mini, Kindle Fire, Acer A500 and Blackberry Playbook. </p>
+<p class="text-justify">In addition to solving the resizing issue for a multitude of screen sizes and mobile devices 1.0.43 also hides (and modifies) some non-essential  (mobile viewing) elements. For screen sizes of <768px Mediawiki admin links, search and BootStrapSkinSidebar are hidden, font size is also reduced to 13px for small devices and 12px for extra small devices.</p>
+<p class="text-justify"><strong>Bootstrapskin does not work with Mediawiki versions <1.22.5</strong></p>
+                       <div class="col-md-6 pull-left">
+                       <ul class="list-group">
+                      <li class="list-group-item">1. [[#Optional_Extensions|Extensions]]</li>
+                      <li class="list-group-item">2. [[#Installation_Instructions|Installation]]</li>
+                      <li class="list-group-item">3. [[#Installing_Addons|Installing Addons]]</li>
+                      <li class="list-group-item">4. [[#Contact_Extension|Contact Ext.]]</li>
+                      <li class="list-group-item">5. [[#BootStrapSkinSidebar_Extension|Sidebar Extension]]</li>
+                    </ul>
+                    </div>
+                       <div class="col-md-6 pull-right">
+                       <ul class="list-group">
+                      <li class="list-group-item">6. [[#Skin_Variations|Skin Variations]]</li>
+                      <li class="list-group-item">7. [[#Custom_Footer|Custom Footer]]</li>
+                      <li class="list-group-item">8. [[#Core_Team|Core Team]]</li>
+                      <li class="list-group-item">9. [[#Support|Support]]</li>
+                      <li class="list-group-item">10. [[#Download.21|Download]]</li>
+                    </ul>
+                    </div>
+</div> 
+</div> 
+</div>
+<div class="col-md-12"> 
+<div class="panel panel-primary-light-border"> 
+<div class="panel-heading"> <h3 class="panel-title">What's New?</h3> </div> 
+<div class="panel-body">
+<p class="text-justify">To date this is our single biggest update of BootStrapSkin, with a host of additional features requested by members and users, these include;</p>
+<ul class="list-unstyled" style="margin-bottom:5px;">
+<li><i class="fa fa-caret-right"></i> BootStrapSkinSidebar extension</li>
+<li><i class="fa fa-caret-right"></i> Two additional css styles (black and rtl)</li>
+<li><i class="fa fa-caret-right"></i> Two extra skin layouts</li>
+<li><i class="fa fa-caret-right"></i> Added security to BootStrapSkinContacts extension</li>
+</ul>
+<p class="text-justify">We've also included a selection of optional Social media plugins that can be added after BootStraSkin has been installed ([http://mediawikibootstrapskin.co.uk/demo/index.php?title=Category:BootStrapSkin_Addons see here] for details).</p>
+<ul class="list-unstyled">
+<li><i class="fa fa-caret-right"></i> Twitter Feed Plugin</li>
+<li><i class="fa fa-caret-right"></i> Youtube Plugin</li>
+<li><i class="fa fa-caret-right"></i> Social Sharing Plugin</li>
+</ul>
+</div> 
+</div> 
+</div>
+<div class="col-md-12"> 
+<div class="panel panel-primary-light-border"> 
+<div class="panel-heading"> <h3 class="panel-title">Optional Extensions</h3> </div> 
+<div class="panel-body">
+<p class="text-justify">The optional addons from the previous version are still included and only require a minor edit to bootstrapskin.php to install (see below).</p>
+<ul class="list-unstyled" style="margin-bottom:5px;">
+<li><i class="fa fa-caret-right"></i> Fam Fam Icons</li>
+<li><i class="fa fa-caret-right"></i> BootStrap Social Buttons</li>
+<li><i class="fa fa-caret-right"></i> BootStrap Prettify</li>
+<li><i class="fa fa-caret-right"></i> Contact Page</li>
+<li><i class="fa fa-caret-right"></i> BootStrapSkinSidebar (Google Nexus Menu)</li>
+</ul>
+<p class="text-justify">Other addons such as GlyphIcons are still available but have been "switched off," again it only requires a minor modifaction to reinstall.</p>
+<div class="going-top">[[#Download_BootStrapSkin_1.0.43|TOP]] <i class="fa fa-level-up fa-fw"></i></div>
+</div> 
+</div> 
+</div>
+<div class="col-md-12"> 
+<div class="panel panel-primary-light-border"> 
+<div class="panel-heading"> <h3 class="panel-title">Installation Instructions</h3> </div> 
+<div class="panel-body">
+<p>Download and extract the file(s) in a directory called BootStrap in your skins/ folder.</p>
+<p>Dont be concerned that there isn't a base file in skins root, this is normal.</p>
+<p>Add the following code at the bottom of your LocalSettings.php</p>
+<pre class="prettyprint">require_once( "$IP/skins/bootstrap/bootstrapskin.php" );
+$wgDefaultSkin = "bootstrapskin";</pre>
+<p>Optional mods which will help with some of the features;</p>
+<pre class="prettyprint">$wgRestrictDisplayTitle = false;
+$wgAllowExternalImages = true;</pre>
+<h5><span class="label label-meadow">RestrictDisplayTitle</span></h5>
+<p class="text-justify">BootStrapSkin offers numerous alternatives to style article titles. Using this setting allows you to decide if you want to include the default title styling or not. If its a not add the following to the top of the page;</p>
+<pre class="prettyprint">{{DISPLAYTITLE:<span style="display: none"></span>}}</pre>
+<h5><span class="label label-meadow">AllowExternalImages</span></h5>
+<p class="text-justify">Images render a little better when the complete link is used, opposed to using the wiki syntax. Using this method also allows you to add style to images, which is especially important if you intend to use Carousel.</p>
+<div class="going-top">[[#Download_BootStrapSkin_1.0.43|TOP]] <i class="fa fa-level-up fa-fw"></i></div>
+</div> 
+</div> 
+</div>
+<div class="col-md-12"> 
+<div class="panel panel-primary-light-border"> 
+<div class="panel-heading"> <h3 class="panel-title">Post Install Configuration</h3> </div> 
+<div class="panel-body">
+<p class="text-justify">View the [[Features Guides|guides pages]] to see how the typography can be added to articles or join our [http://forum.mediawikibootstrapskin.co.uk/ forums] and ask for help.</p>
+<p class="text-justify">You will also find it beneficial to read the following at the [http://getbootstrap.com/css/#grid Bootstrap website], which gives details of the basic bootstrap typography, most of which works with BootStrapSkin.</p>
+<p class="text-justify">If you intend to use the forums be mindful that I am UK based and while I try to answer questions in a timely manner, there may be some delay, especially Monday to Friday. If your query is urguent use the [[Special:SpecialContact|contact page]] as these messages are also sent to my mobile phone.</p>
+<div class="going-top">[[#Download_BootStrapSkin_1.0.43|TOP]] <i class="fa fa-level-up fa-fw"></i></div>
+</div> 
+</div> 
+</div>
+<div class="col-md-12"> 
+<div class="panel panel-primary-light-border"> 
+<div class="panel-heading"> <h3 class="panel-title">Installing Addons</h3> </div> 
+<div class="panel-body">
+<p class="text-justify">Installing an addon involves nothing more than removing the comments // from the appropriate line in boostrapskin.php</p>
+<pre class="prettyprint">$wgResourceModules['skins.bootstrapskin'] = array(
+        'styles' => array(
+                'bootstrap/bootstrap/css/bootstrap-blue.css' => array( 'media' => 'screen' ),
+                'bootstrap/screen.css' => array( 'media' => 'screen' ),
+                'bootstrap/theme.css' => array( 'media' => 'screen' ),
+                'bootstrap/bootstrap/css/jquery-ui.min.css' => array( 'media' => 'screen' ),
+                'bootstrap/bootstrap/css/font.css' => array( 'media' => 'screen' ),
+                'bootstrap/bootstrap/css/jquery-ui.min.css' => array( 'media' => 'screen' ),
+             //'bootstrap/bootstrap/css/glyphicons.css' => array( 'media' => 'screen' ),
+             //'bootstrap/bootstrap/css/fam-icons.css' => array( 'media' => 'screen' ),
+                'bootstrap/bootstrap/css/typography.css' => array( 'media' => 'screen' ),
+                'bootstrap/bootstrap/css/misc.css' => array( 'media' => 'screen' ),
+             //'bootstrap/bootstrap/css/social-buttons.css' => array( 'media' => 'screen' ),
+             //'bootstrap/bootstrap/css/prettify.css' => array( 'media' => 'screen' ),
+   ),</pre>
+<pre class="prettyprint">   'scripts' => array(
+                'bootstrap/bootstrap/js/jquery-ui.min.js',
+                'bootstrap/bootstrap/js/bootstrap.js',
+                'bootstrap/skin.js',
+                'bootstrap/bootstrap/js/buttons.js',
+                'bootstrap/bootstrap/js/portlets.js',
+                'bootstrap/bootstrap/js/misc.js',
+             //'bootstrap/bootstrap/js/run_prettify.js',      
+   ),
+   ),</pre>
+<div class="going-top">[[#Download_BootStrapSkin_1.0.43|TOP]] <i class="fa fa-level-up fa-fw"></i></div>
+</div> 
+</div> 
+</div>
+<div class="col-md-12"> 
+<div class="panel panel-primary-light-border"> 
+<div class="panel-heading"> <h3 class="panel-title">Contact Extension</h3> </div> 
+<div class="panel-body">
+<p class="text-justify">Use of this extension is entirely optional if you don't want to use it, ignore the following.</p>
+<p class="text-justify">Move to the extensions folder and edit contacts-process.php and replace with your email as below;</p>
+<pre class="prettyprint">$to = 'info@mediawikibootstrapskin.co.uk'; // Replace with your email</pre>
+<p class="text-justify">And then add the following to LocalSettings.php</p>
+<pre class="prettyprint">require_once "$IP/extensions/BootStrapSkinContact/BootStrapSkinContact.php";</pre>
+<p class="text-justify">Refresh browser cache and navigate to Special:SpecialContact and test the functionality and create the resultant thank you page once you land there after sending your first message.</p>
+<div class="going-top">[[#Download_BootStrapSkin_1.0.43|TOP]] <i class="fa fa-level-up fa-fw"></i></div>
+</div> 
+</div> 
+</div>
+<div class="col-md-12"> 
+<div class="panel panel-primary-light-border"> 
+<div class="panel-heading"> <h3 class="panel-title">BootStrapSkinSidebar Extension</h3> </div> 
+<div class="panel-body">
+<p class="text-justify">Currently only available with Bootstrapskin.skin_V1</p>
+<p class="text-justify">Move to the extensions folder and add the following to LocalSettings.php</p>
+<pre class="prettyprint">require_once "$IP/extensions/BootStrapSkinSidebar/BootStrapSkinSidebar.php";</pre>
+<p class="text-justify">Refresh browser cache and then edit bootstrap/extensions/BootStrapSkinSidebar/Sidebar.php</p>
+<div class="going-top">[[#Download_BootStrapSkin_1.0.43|TOP]] <i class="fa fa-level-up fa-fw"></i></div>
+</div> 
+</div> 
+</div>
+<div class="col-md-12"> 
+<div class="panel panel-primary-light-border"> 
+<div class="panel-heading"> <h3 class="panel-title">Skin Variations</h3> </div> 
+<div class="panel-body">
+<p class="text-justify">1.0.43 includes three versions of bootstrapskin.skin.php, these are;</p>
+<ul class="list-unstyled" style="margin-bottom:5px;">
+<li><i class="fa fa-caret-right"></i> Bootstrapskin.skin.php - original nav that uses the Mediawiki SideBar</li>
+<li><i class="fa fa-caret-right"></i> Bootstrapskin.skin_V1.php</li>
+<li><i class="fa fa-caret-right"></i> Bootstrapskin.skin_V2.php </li>
+</ul>
+<h5><span class="label label-meadow">Bootstrapskin.skin_V1.php</span></h5>
+<p class="text-justify">Displays the main menu below the logo with Mediawiki links at the top left (this is the version we use).</p>
+<div class="img-responsive hidden-sm hidden-xs">http://www.mediawikibootstrapskin.co.uk/images/dropdown_bss.jpg</div>
+<h5><span class="label label-meadow">Bootstrapskin.skin_V2.php</span></h5>
+<p class="text-justify">Version two displays the main menu top left with Mediawiki links below the logo and search top right.</p>
+<div class="img-responsive hidden-sm hidden-xs">http://www.mediawikibootstrapskin.co.uk/images/alt.jpg</div>
+<p class="text-justify">Rename your prefered version to Bootstrapskin.skin</p>
+<div class="going-top">[[#Download_BootStrapSkin_1.0.43|TOP]] <i class="fa fa-level-up fa-fw"></i></div>
+</div> 
+</div> 
+</div>
+<div class="col-md-12"> 
+<div class="panel panel-primary-light-border"> 
+<div class="panel-heading"> <h3 class="panel-title">Custom Footer</h3> </div> 
+<div class="panel-body">
+<p class="text-justify">Version 1.0.43 includes a new customisable footer, located in the root folder (footer.php) edit as required. If you don't want to use the custom footer, rename or delete footer.php and the skin will revert to the Mediawiki default footer. </p>
+<p class="text-justify">Also includes bootstrap styled social icons, the default Mediawiki footer and the ability to add several additional logo's.</p>
+<p class="text-justify"><strong>Note</strong>: We now have a social extension which gives better functionality [http://www.mediawikibootstrapskin.co.uk/index.php?title=Bootstrapskin_Extensions#Bootstrapskin_Social see here to view and download]</p>
+<div class="going-top">[[#Download_BootStrapSkin_1.0.43|TOP]] <i class="fa fa-level-up fa-fw"></i></div>
+</div> 
+</div> 
+</div>
+<div class="col-md-12"> 
+<div class="panel panel-primary-light-border"> 
+<div class="panel-heading"> <h3 class="panel-title">Core Team</h3> </div> 
+<div class="panel-body">
+<ul class="list-unstyled" style="margin-bottom:5px;">
+<li><i class="fa fa-caret-right"></i> Lee Miller</li>
+<li><i class="fa fa-caret-right"></i> Dennis Groenewegen</li>
+<li><i class="fa fa-caret-right"></i> Jay Mckintosh </li>
+<div class="going-top">[[#Download_BootStrapSkin_1.0.43|TOP]] <i class="fa fa-level-up fa-fw"></i></div>
+</ul>
+</div> 
+</div> 
+</div>
+<div class="col-md-12"> 
+<div class="panel panel-primary-light-border"> 
+<div class="panel-heading"> <h3 class="panel-title">Support</h3> </div> 
+<div class="panel-body">
+<p class="text-justify">Any problems or questions on achieving styles not included in the guides join our forum, the moderators are excellent and will answer pretty much anything on Bootstrap and Mediawiki.</p>
+<h5><span class="label label-meadow">Localhost Support</span></h5>
+<p class="text-justify">For users who are developing a wiki on a private server (e.g. xampp, lamp etc.). If you're having problems with a customisation, please join our [http://mediawikibootstrapskin.co.uk/demo/index.php?title=Main_Page BootStrapSkin Members Wiki], create a page which contains your code, then create a support request at the forums with a link to your wiki page.</p>
+<p class="text-justify"><strong>You must be "email confirmed" to create wiki pages! See the bottom of the preferences page.</strong></p>
+<div class="going-top">[[#Download_BootStrapSkin_1.0.43|TOP]] <i class="fa fa-level-up fa-fw"></i></div>
+<p class="text-justify">BootStrapSkin is updated often! Members and users are informed of updates through our Twitter Feed.</p>
+<div class="btn btn-github"><i class="fa fa-twitter"></i> | [https://twitter.com/Bootstrapskin Follow BootStrapskin]</div>
+</div> 
+</div> 
+</div>
+<div class="col-md-12"> 
+<div class="panel panel-primary-light-border"> 
+<div class="panel-heading"> <h3 class="panel-title">Extending Bootstrapskin</h3> </div> 
+<div class="panel-body">
+<p class="text-justify">We also provide several popular Mediawiki extensions - Lighbox Image Gallery, Slideshow, News Ticker, Bread Crumbs, Social Sharing, Google Maps, Youtube Video, Twitter Feed and more.</p>
+<div class="btn btn-default" style="margin-top:15px;"><i class="fa fa-search"></i> [[Bootstrapskin Extensions#Bootstrapskin_Extensions|View Extensions]]</div>
+<div class="going-top">[[#Download_BootStrapSkin_1.0.43|TOP]] <i class="fa fa-level-up fa-fw"></i></div>
+</div> 
+</div> 
+</div>
+<!--<htmlet nocache="yes">download</htmlet>
+<div class="thumbnail and img-thumbnail" style="cursor: pointer;border:none;" data-toggle="modal" data-target="#bssCommercial">http://mediawikibootstrapskin.co.uk/images/bootstrapskin-commercial-skin.png</div>
+<div id="bssCommercial" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="close" data-dismiss="modal" aria-hidden="true">×</div>
+            <h4 class="modal-title" id="myModalLabel">Our Commercial Skins</h4>
+          </div>
+          <div class="col-md-12">
+            <p class="text-justify" style="margin-top:10px;">We have two ultra smooth commercial skins - Nexus and Halcyon - which are available by making a donation of just £20 (approx $32/&euro;26) per skin.</p>
+          <p class="text-justify">View demo's of [http://www.mediawikibootstrapskin.co.uk/halcyon/index.php?title=Main_Page Halcyon] and [http://www.mediawikibootstrapskin.co.uk/nexus/index.php?title=Main_Page Nexus].</p>
+<div class="col-md-6 pull-left">
+<div class="thumbnail img-thumbnail" style="border:none;float:left;">http://images-cdn.ecwid.com/images/738455/244138447.jpg</div></div>
+<div class="col-md-6 pull-right">
+<div class="thumbnail img-thumbnail" style="border:none;float:left;">http://images-cdn.ecwid.com/images/738455/244138487.jpg</div></div>
+          </div>
+          <div class="modal-footer" style="border-top: transparent;">
+            <div class="btn btn-primary">[http://www.mediawikibootstrapskin.co.uk/index.php?title=Special:SpecialShop#!/Halcyon-Skin/p/41528627/category=10721547 Purchase Halcyon]</div>
+            <div class="btn btn-primary">[http://www.mediawikibootstrapskin.co.uk/index.php?title=Special:SpecialShop#!/Nexus-Skin/p/41220409/category=10721547 Purchase Nexus]</div>
+            <div class="btn btn-default" data-dismiss="modal">Close</div>
+          </div>
+        </div>
+      </div>
+    </div>-->
+<div class="col-md-12">
+<div class="text-center hidden-xs" style="margin-left:30%;margin-bottom:20px;"><div class="fb-like" data-href="http://mediawikibootstrapskin.9ong.com/" data-layout="standard" data-action="like" data-show-faces="false" data-share="true" data-colorscheme="light"></div></div>

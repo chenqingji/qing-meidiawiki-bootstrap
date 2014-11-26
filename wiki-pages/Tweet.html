@@ -1,0 +1,36 @@
+__NOTOC__
+{{DISPLAYTITLE:Tweet}}
+<h4>Bootstrapskin Tweet</h4>
+<div class="col-md-4 pull-right">
+<div class="tweet-wrap">
+<div class="tweet-head"><h5>Bootstrapskin Tweets</h5></div>
+<div id="tweecool"></div>
+<div class="tweet-footer">
+<div class="btn btn-twitter" style="margin:3px;"><i class="fa fa-twitter"></i> |  [https://twitter.com/Bootstrapskin Connect with Twitter]</div>
+</div>
+</div>
+</div>
+<div class="col-md-8 pull-left">
+<h4>Installation</h4>
+<p class="text-justify">Download and unpack into your extensions folder and add the following to the bottom of LocalSettings.php</p>
+<pre>require_once "$IP/extensions/BootStrapSkinTweet/tweet.php";</pre>
+<h4>Configuration</h4>
+<p class="text-justify">Open to edit /extensions/BootStrapSkinTweet/modules/ext.output.js and add your Twitter username.</p>
+<h4>Input</h4>
+<p class="text-justify">Add the following into your prefered article location, replacing # with the url to your Twitter page.</p>
+<pre>
+    <div class="tweet-wrap">
+      <div class="tweet-head">
+        <h5>Bootstrapskin Tweets</h5>
+      </div>
+      <div id="tweecool"></div>
+      <div class="tweet-footer">
+        <div class="btn btn-twitter" style="margin:3px;">| [# Connect with Twitter]</div>
+      </div>
+    </div>
+</pre>
+<h4>Vector Use</h4>
+<p class="text-justify">Also works with Vector, though you may want to consider using vector.css, which will allow you to align your feed within the article.</p>
+<p class="text-justify">In which case open to edit /extensions/BootStrapSkinTweet/tweet.php and remove the comments // from line 19 and then use the classes in modules/ext.vector.css. You may need to fine tune the styling.</p>
+<p><div class="btn btn-default" style="margin-bottom:30px;">[http://mediawikibootstrapskin.9ong.com/index.php?title=Bootstrapskin_Extensions#Bootstrapskin_Tweet Download BootstrapskinTweet]</div></p>
+</div>

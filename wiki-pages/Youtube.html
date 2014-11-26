@@ -1,0 +1,33 @@
+__NOTOC__
+{{DISPLAYTITLE:Youtube}}
+<div class="col-md-12" style="margin-bottom:25px;">
+<h4>Youtube Extension</h4>
+<div class="col-md-8">
+ <div id="youtube" data-youtube-id="dQtDWumc7Q0" data-ratio="16:9"> loading ... </div>
+</div>
+<div class="clearfix"></div>
+<h4>Installation</h4>
+<p class="text-justify">Download and unpack into your extensions folder and add the following to the bottom of LocalSettings.php</p>
+<pre>require_once "$IP/extensions/BootStrapSkinYT/youtube.php";</pre>
+<h4>Input</h4>
+<p class="text-justify">Place the following into your prefered article location - replacing the data-youtube-id with your video.</p>
+<pre> <div id="youtube" data-youtube-id="dQtDWumc7Q0" data-ratio="16:9"> loading ... </div></pre>
+<h4>Vector Use</h4>
+<p class="text-justify">Also works with Vector, but will require a slight modification if you want to resize videos.</p>
+<p class="text-justify">Open to edit /extensions/BootStrapSkinYT/youtube.php and remove the comments // from line 19;</p>
+<pre>//'modules/ext.vector.css',</pre>
+<p>Resize video's using the following classes (width % represents the percentage of the content area).</p>
+<pre>
+<div class="col-md-12">video here</div> // width = 100%
+<div class="col-md-11">video here</div> // width = 91.6667%
+<div class="col-md-10">video here</div> // width = 83.3333%
+<div class="col-md-9">video here</div> // width = 75%
+<div class="col-md-8">video here</div> // width = 66.6667%
+<div class="col-md-7">video here</div> // width = 58.3333%
+<div class="col-md-6">video here</div> // width = 50%
+<div class="col-md-5">video here</div> // width = 41.6667%
+<div class="col-md-4">video here</div> // width = 33.3333%
+<div class="col-md-3">video here</div> // width = 25%
+</pre>
+<p><div class="btn btn-default">[http://mediawikibootstrapskin.9ong.com/index.php?title=Bootstrapskin_Extensions#Bootstrapskin_Youtube Download BootstrapskinYT]</div></p>
+</div>

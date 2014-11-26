@@ -1,0 +1,89 @@
+__NOTOC__
+{{DISPLAYTITLE:Gallery}}
+<div class="col-md-12" style="margin-top:50px;margin-bottom:25px;">
+<h4>Bootstrapskin Gallery</h4>
+        <div class="gallery">
+            <div class="row">
+                <div class="col-xs-12 spinner-wrapper">
+                    <div class="spinner"></div>
+                </div>
+                <div class="gallery-container"></div>
+            </div>
+        </div>
+        <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+            <div class="slides"></div>
+            <h3 class="title"></h3>
+            <a class="prev">‹ </a>
+            <a class="next"> ›</a>
+            <a class="close">×</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+            <div class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-top">
+                            <div class="button" class="close" aria-hidden="true">&times;</div>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body next"></div>
+                        <div class="modal-footer">
+                            <div class="btn btn-default pull-left prev"><i class="fa fa-chevron-left"></i>Previous</div>
+                            <div class="btn btn-default next">Next<i class="fa fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+<div class="col-md-12">
+<h4>Installation</h4>
+<p class="text-justify">Download and unpack into your extensions folder and add the following to the bottom of LocalSettings.php</p>
+<pre>require_once "$IP/extensions/BootStrapSkinGallery/gallery.php";</pre>
+<h4>Configuration</h4>
+<p class="text-justify">Open to edit extensions/BootStrapSkinGallery/modules/ext.output.js . If you have modals installed at your wiki change line 4 to;</p>
+<pre>useBootstrapModal: true,</pre>
+<p class="text-justify">Modify lines 10 and 11 and replace with your own Flickr API key and photoset id.</p>
+<h4>Article Input</h4>
+<p class="text-justify">Add the following to the article where you want the gallery displayed.</p>
+<pre><div class="col-md-12">
+<div class="container" style="margin-bottom:25px;">
+        <div class="gallery">
+            <div class="row">
+                <div class="col-xs-12 spinner-wrapper">
+                    <div class="spinner"></div>
+                </div>
+                <div class="gallery-container"></div>
+            </div>
+        </div>
+        <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+            <div class="slides"></div>
+            <h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="close">×</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+            <div class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-top">
+                            <div class="button" class="close" aria-hidden="true">&times;</div>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body next"></div>
+                        <div class="modal-footer">
+                            <div class="btn btn-default pull-left prev"><i class="fa fa-chevron-left"></i>Previous</div>
+                            <div class="btn btn-default next">Next<i class="fa fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div></pre>
+<h4>Vector Use</h4>
+<p class="text-justify">BootStrapSkinGallery also works with Vector. open to edit extensions/BootStrapSkinGallery/gallery.php and remove the comments from line 20;</p>
+<pre>//'modules/vendor/bootstrap-3.1.1/css/bootstrap.css',</pre>
+<p><div class="btn btn-default">[http://mediawikibootstrapskin.9ong.com/index.php?title=Bootstrapskin_Extensions#Bootstrapskin_Gallery Download Bootstrapskin Gallery]</div></p>
+</div>
