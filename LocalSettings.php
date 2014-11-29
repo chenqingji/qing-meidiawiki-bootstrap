@@ -146,4 +146,3 @@ $wgDuoshuoShortName = 'mediawikibootstrapskin';
 $wgDuoshuoSecret = '8432fd33d89be435e52e6ca6caebedea';
 
 
-##//测试环节
