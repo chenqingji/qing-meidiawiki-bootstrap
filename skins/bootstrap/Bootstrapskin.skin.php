@@ -42,23 +42,23 @@ class SkinBootstrap extends SkinTemplate {
 	
 	//Replace the following with your own google analytic info 
 	
-	$out->addHeadItem( 'analytics',
-            '<script type="text/javascript">'."
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-0000000-00']);
-  _gaq.push(['_setDomainName', 'yourdomain.com/with-no-http://']);
-  _gaq.push(['_setAllowHash', 'false']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>"
-        );
+//	$out->addHeadItem( 'analytics',
+//            '<script type="text/javascript">'."
+//
+//  var _gaq = _gaq || [];
+//  _gaq.push(['_setAccount', 'UA-0000000-00']);
+//  _gaq.push(['_setDomainName', 'yourdomain.com/with-no-http://']);
+//  _gaq.push(['_setAllowHash', 'false']);
+//  _gaq.push(['_trackPageview']);
+//
+//  (function() {
+//    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+//    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+//    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+//  })();
+//
+//</script>"
+//        );
 
     $out->addHeadItem('responsive', '<meta name="viewport" content="width=device-width, initial-scale=1.0">');
     $out->addModuleScripts( 'skins.bootstrapskin' );
