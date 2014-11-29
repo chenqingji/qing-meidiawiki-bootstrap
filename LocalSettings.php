@@ -139,6 +139,10 @@ $wgAllowExternalImages = true;
 require_once "$IP/skins/bootstrap/extensions/BootStrapSkinContact/BootStrapSkinContact.php";
 require_once "$IP/skins/bootstrap/extensions/BootStrapSkinSidebar/BootStrapSkinSidebar.php";
 
+##duoshuo
 
+require_once("$IP/extensions/Duoshuo/Duoshuo.php");
+$wgDuoshuoShortName = 'mediawikibootstrapskin';
+$wgDuoshuoSecret = '8432fd33d89be435e52e6ca6caebedea';
 
 
