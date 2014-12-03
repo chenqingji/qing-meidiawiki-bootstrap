@@ -1,0 +1,68 @@
+__NOTOC__
+{{DISPLAYTITLE:<span style="display: none">Social_Sharing_Plugin</span>}}
+
+<div class="col-md-12"> 
+<div class="panel panel-primary-light-border"> 
+<div class="panel-heading"> <h3 class="panel-title">Social Sharing Plugin</h3> </div> 
+<div class="panel-body">
+<p class="text-justify">Please to announce the release of a new plugin to the BootStrapSkin Library of addons.</p>
+<p>This new addon allows for the addition of social sharing functionality to any location within Mediawiki artcles."</p>
+
+<div style="display: block;" class="share-button sharer-0"><label class="entypo-export"><span>Share</span></label><div class="social load top center networks-5"><ul><li class="entypo-pinterest" data-network="pinterest"></li><li class="entypo-twitter" data-network="twitter"></li><li class="entypo-facebook" data-network="facebook"></li><li class="entypo-gplus" data-network="google_plus"></li><li class="entypo-paper-plane" data-network="email"></li></ul></div></div>
+
+<br />
+
+<h4>Features</h4>
+<p class="text-justify">Absolutely no requirement to add links to your content, this is handled by the Javascript, meaning the same block of code can be applied to any page and yet a different page can be shared through any of the social sites.</p>
+<h4>Limitiations</h4>
+<p class="text-justify">You will need to create a Facebook App to enable the Facebook sharing feature (see below).</p>
+<h4>Installation</h4>
+<p>Download the files [http://www.mediawikibootstrapskin.co.uk/forum/download/file.php?id=54 here].</p>
+<p>Unpack the zipped folder and move share.min.js to bootstrap/bootstrap/js </p>
+<p>Open to edit bootstrapskin.php and add the following to the bottom of the js array</p>
+
+<pre class="prettyprint">'bootstrap/bootstrap/js/share.min.js',</pre>
+
+<p>Visit your wiki and open Mediawiki:Common.js  and add the following block of code.</p>
+
+<pre class="prettyprint">
+new Share(".share-button", {
+  networks: {
+    facebook: {
+      app_id: "your facebook app id"
+    }
+  }
+});
+</pre>
+
+<p>Add the following the location where you would like the place the share button.</p>
+
+<pre class="prettyprint">
+<div style="display: block;" class="share-button sharer-0">
+    <label class="entypo-export"><span>Share</span></label>
+        <div class="social load top center networks-5">
+            <ul>
+                <li class="entypo-pinterest" data-network="pinterest"></li>
+                <li class="entypo-twitter" data-network="twitter"></li>
+                <li class="entypo-facebook" data-network="facebook"></li>
+                <li class="entypo-gplus" data-network="google_plus"></li>
+                <li class="entypo-paper-plane" data-network="email"></li>
+            </ul>
+        </div>
+</div>
+</pre>
+
+<h4>Creating a Facebook App</h4>
+
+<p>Visit the [https://developers.facebook.com/ Facebook Developers] website to create a new app.</p>
+<p>Select the "app" tab and then "create a new app".</p>
+<p>Create a display name and namespace, also select a categoty, then click "create app" and complete the security check, wait while your app is created.</p>
+<p>Copy the app id at the top of the page and paste the id into the code in Common.js</p>
+<p>Now select settings (from the left hand side menu) and click "Add Platform".</p>
+<p>Select "website" and add your website url. Note that the url should not contain http or www, but it should include a trailing forward slash i.e. yourwebsite.com/</p>
+
+</div> 
+</div> 
+</div>
+
+[[Category: BootStrapSkin Addons]]

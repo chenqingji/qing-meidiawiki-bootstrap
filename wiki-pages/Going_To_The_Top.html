@@ -1,0 +1,75 @@
+__NOTOC__{{DISPLAYTITLE:Going to the Top plugin<span style="display: none"></span>}}
+<div class="col-md-12 hidden-sm hidden-xs"><div class="thumbnail img-thumbnail" style="border:none;float:left;">http://mediawikibootstrapskin.co.uk/images/bootstrapskin-logo.png</div></div>
+<div class="col-md-12"> 
+<div class="panel panel-primary-light-border"> 
+<div class="panel-heading"> <h3 class="panel-title" id=top>To the Top</h3></div> 
+<div class="panel-body">
+<p class="text-justify">A very basic style that allows the visitor to scroll to the top of the page with a single click of the mouse, which can be useful for large articles. To the Top is not available in 1.0.43, but can be added using the steps below.</p>
+<h5><span class="label label-meadow">Demo Content</span></h5>
+<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="going-top">[[#top|TOP]] <i class="fa fa-level-up fa-fw"></i></div>
+</div> 
+</div> 
+</div>
+<div class="col-md-12"> 
+<div class="panel panel-primary-light-border"> 
+<div class="panel-heading"> <h3 class="panel-title">Install</h3></div> 
+<div class="panel-body">
+<p class="text-justify">Add the following to the bottom of bootstrap/bootstrap/bootstrap-blue.css (or your chosen color). </p>
+<pre>
+.going-top:hover {
+    text-decoration: none;
+    background: none repeat scroll 0% 0% #555;
+    border-bottom: 2px solid #333;
+    color: #EEE;
+    transition: all 0.3s ease-in-out 0s;
+}
+.going-top {
+    padding: 3px 3px 3px 10px;
+    background: none repeat scroll 0% 0% #EEE;
+    border-bottom: 2px solid #CCC;
+    color: #555;
+    font-size: 1em;
+    border-radius: 4px;
+    margin: 1em auto 0px;
+    float: right;
+    transition: all 0.3s ease-in-out 0s;
+}
+</pre>
+<p class="text-justify">Next  create an id  for the location where you want To the Top to scroll to when clicked. In our example we use the h3 panel class, e.g. below id="top, but you can use any phrase so long as it matches the link id. Where you scroll to is your choice and you can use any element to add an id i.e. &lt;p id="top"&gt;</p>
+<pre><h3 class="panel-title" id="top">To the Top</h3></div></pre>
+<p class="text-justify">And finally add the following when ever you want to scroll to the top.</p>
+<pre><div class="going-top">[[#top|TOP]] <i class="fa fa-level-up fa-fw"></i></div></pre>
+<div class="going-top">[[#top|TOP]] <i class="fa fa-level-up fa-fw"></i></div>
+</div> 
+</div> 
+</div>
+<!--<div class="thumbnail and img-thumbnail" style="cursor: pointer;border:none;" data-toggle="modal" data-target="#bssCommercial">http://mediawikibootstrapskin.co.uk/images/bootstrapskin-commercial-skin.png</div>
+<div id="bssCommercial" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="close" data-dismiss="modal" aria-hidden="true">×</div>
+            <h4 class="modal-title" id="myModalLabel">Our Commercial Skins</h4>
+          </div>
+          <div class="col-md-12">
+            <p class="text-justify" style="margin-top:10px;">We have two ultra smooth commercial skins - Nexus and Halcyon - which are available free of charge to applicable organisations or by making a donation of just £20 (approx $32/&euro;26) per skin.</p>
+          <p class="text-justify">View demo's of [http://www.mediawikibootstrapskin.co.uk/halcyon/index.php?title=Main_Page Halcyon] and [http://www.mediawikibootstrapskin.co.uk/nexus/index.php?title=Main_Page Nexus].</p>
+<div class="col-md-6 pull-left">
+<div class="thumbnail img-thumbnail" style="border:none;float:left;">http://images-cdn.ecwid.com/images/738455/244138447.jpg</div></div>
+<div class="col-md-6 pull-right">
+<div class="thumbnail img-thumbnail" style="border:none;float:left;">http://images-cdn.ecwid.com/images/738455/244138487.jpg</div></div>
+          </div>
+          <div class="modal-footer" style="border-top: transparent;">
+            <div class="btn btn-primary">[http://www.mediawikibootstrapskin.co.uk/index.php?title=Special:SpecialShop#!/Halcyon-Skin/p/41528627/category=10721547 Purchase Halcyon]</div>
+            <div class="btn btn-primary">[http://www.mediawikibootstrapskin.co.uk/index.php?title=Special:SpecialShop#!/Nexus-Skin/p/41220409/category=10721547 Purchase Nexus]</div>
+            <div class="btn btn-default" data-dismiss="modal">Close</div>
+          </div>
+        </div>
+      </div>
+    </div>-->
+<div class="col-md-12">
+<div class="text-center hidden-xs" style="margin-left:30%;margin-bottom:20px;"><div class="fb-like" data-href="http://mediawikibootstrapskin.9ong.com/" data-layout="standard" data-action="like" data-show-faces="false" data-share="true" data-colorscheme="light"></div></div>
