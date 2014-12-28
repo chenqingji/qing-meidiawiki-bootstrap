@@ -146,3 +146,8 @@ $wgDuoshuoShortName = 'mediawikibootstrapskin';
 $wgDuoshuoSecret = '8432fd33d89be435e52e6ca6caebedea';
 
 
+##htmllets
+require_once "$IP/extensions/HTMLets/HTMLets.php";
+$wgHTMLetsDirectory = "$IP/htmlets";
+
+
