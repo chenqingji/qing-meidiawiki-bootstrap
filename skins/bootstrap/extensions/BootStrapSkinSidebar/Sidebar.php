@@ -6,7 +6,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <div id="gn-menu" class="pull-left" style="margin-top:20px;position:fixed;">
+            <div id="gn-menu" class="pull-left" style="margin-top:20px;position:fixed;z-index: 999;">
                 <div class="gn-menu-main">
                     <a class="gn-icon gn-icon-menu"><span>Guides</span></a>
                     <div class="gn-menu-wrapper">
@@ -19,7 +19,7 @@
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);" class="parent">
-                                        <i class="fa fa-download parent-first"></i>下载
+                                        <i class="fa fa-download parent-first"></i>下载及扩展
                                         <i class="fa fa-plus parent-icon"></i>
                                     </a>
                                     <ul class="bs-docs-sidenav" style="display:none;">
