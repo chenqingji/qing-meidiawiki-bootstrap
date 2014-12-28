@@ -1,0 +1,34 @@
+<div class="col-md-12"> 
+<div class="panel panel-primary-light-border"> 
+<div class="panel-heading"> <h3 class="panel-title">Download BootStrapSkin Mini 1.0.44</h3> </div> 
+<div class="panel-body">
+<p class="text-justify">BootStraSkin Mini is a brand new skin for Mediawiki, it can be used in combination with BootStrapSkin or any of the next generation skins we'll be releasing over the next few months. The "stable" version of BootStrapSkin Mini has a proposed release date of October 1st 2014, though a Beta version is available to download now (see below).</p>
+<p class="text-justify">All future versions of BootStrapSkin will include Mini as will the next generation (bootstrap) skins. Mini is not available with BootStrapSkin 1.0.43 but it will be included with 1.0.44</p>
+<h5><span class="label label-danger">What's Cool About Mini?</span></h5>
+<p class="text-justify">For the majority of visitors your wiki will not change at all, whether you're using BootStrapSkin or any other skin they will continue to render as normal when viewed using a PC, Laptop or Tablet, it is only when a visitor views your wiki using a mobile phone that Mini is loaded in place of the default skin.</p>
+<p class="text-justify">View the Mini demo using a mobile phone at - <a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Demo" target="blank">http://www.mediawikibootstrapskin.co.uk/demo</a></p>
+<h4><span class="label label-midnight">Installation</span></h4>
+<p class="text-justify">Upack the download and upload bootstrapmini to the skins folder.</p>
+<p class="text-justify">Dont be concerned that there isn't a base file in skins root, this is normal.</p>
+<p class="text-justify">Add the following code at the bottom of your LocalSettings.php</p>
+<pre class="prettyprint">require_once( "$IP/skins/bootstrap/bootstrapskin.php" );
+require_once( "$IP/skins/bootstrapmini/bootstrapskinmini.php" );
+$wgDefaultSkin = "bootstrapskin";
+$wgRestrictDisplayTitle = false;
+$wgAllowExternalImages = true;
+
+if (preg_match("/(mobile|webos|opera mini|iphone)/i", $_SERVER['HTTP_USER_AGENT'])) {
+    $wgDefaultSkin = 'bootstrapskinmini';
+} else {
+    $wgDefaultSkin = 'bootstrapskin';
+}
+</pre>
+<h5><span class="label label-meadow">RestrictDisplayTitle</span></h5>
+<p class="text-justify">BootStrapSkin offers numerous alternatives to style article titles. Using this setting allows you to decide if you want to include the default title styling or not.</p>
+<h5><span class="label label-meadow">AllowExternalImages</span></h5>
+<p class="text-justify">Unlike BootStrapSkin this is an essential requirement as you will need to add the <mark>thumbnail and img-thumbnail</mark> classes to your images to ensure they are responsive and thus shrink for mobile viewing - visit the link in "Customisation" below for the why's and how's.</p>
+<h5><span class="label label-meadow">preg_match</span></h5>
+<p class="text-justify">Add or remove which devices you wish to use BootStrapSkin Mini.</p>
+</div> 
+</div> 
+</div>
