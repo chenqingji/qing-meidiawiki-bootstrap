@@ -28,11 +28,17 @@
                                                 <i class="fa fa-angle-right child-first"></i>BootStrapSkin
                                             </a>
                                         </li>
+                                        
                                         <li>
                                             <a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Bootstrapskin_Extensions" class="child">
                                                 <i class="fa fa-angle-right child-first"></i>Extension
                                             </a>
                                         </li>
+                                        <li>
+                                            <a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Get_BootStrapSkin_Mini" class="child">
+                                                <i class="fa fa-angle-right child-first"></i>BootStrapSkin Mini
+                                            </a>
+                                        </li>                                        
                                     </ul>
                                 </li>                               
                                 
