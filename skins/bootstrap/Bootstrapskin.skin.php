@@ -238,7 +238,7 @@ class StrappingTemplate extends BaseTemplate {
                     <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i> 主题 <b class="caret"></b></a>
                     <ul class="dropdown-menu text-left" role="menu"> 
                         <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Demo"  target="_blank"> Demo </a></li>
-                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Get_BootStrapSkin"  target="_blank"> Get </a></li>
+                        <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Get_BootStrapSkin"  target="_blank"> 下载及扩展 </a></li>
                         <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Features_Guides"  target="_blank"> 特性概览 </a></li>
                         <li class="divider"></li>
                         <li><a href="http://mediawikibootstrapskin.9ong.com/index.php?title=Special:SpecialContact" target="_blank"> 联系我们 </a></li>
