@@ -52,6 +52,8 @@ $wgResourceModules['skins.bootstrapskin'] = array(
         'bootstrap/bootstrap/js/misc.js',
         'bootstrap/bootstrap/js/tab.js',
         'bootstrap/bootstrap/js/share.min.js',
+        'bootstrap/bootstrap/js/lazyYT.js',
+        'bootstrap/bootstrap/js/timeline.js',
     //'bootstrap/bootstrap/js/run_prettify.js',	  
     ),
     'remoteBasePath' => &$GLOBALS['wgStylePath'],
